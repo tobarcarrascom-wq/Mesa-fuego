@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12100d" />
+    <meta name="description" content="Mesa Fuego — cocina de autor, brasas y sobremesa en un mismo lugar." />
+    <title>Mesa Fuego — Cocina que reúne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <aside class="sample-banner">Muestra de RIKI MONEY · Marca, carta y datos de ejemplo. Adaptamos esta web a tu negocio.</aside>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" data-header>
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="Mesa Fuego, inicio"><span class="brand-flame">✦</span><span>MESA <em>FUEGO</em></span></a>
+        <nav class="desktop-nav" aria-label="Navegación principal"><a href="#carta">La carta</a><a href="#historia">La experiencia</a><a href="#reserva">Reservar</a></nav>
+        <a class="button button-outline nav-button" href="#reserva">Reserva tu mesa <span>↗</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú"><span></span><span></span></button>
+      </div>
+      <nav class="mobile-menu container" id="mobile-menu" aria-label="Navegación móvil"><a href="#carta">La carta</a><a href="#historia">La experiencia</a><a href="#reserva">Reservar</a><a class="button button-orange" href="#reserva">Reserva tu mesa <span>↗</span></a></nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio">
+        <div class="hero-image"></div><div class="hero-shade"></div>
+        <div class="container hero-content"><p class="eyebrow"><span></span> Cocina de autor · Santiago</p><h1>Donde el fuego<br /><em>se vuelve recuerdo.</em></h1><p class="hero-lede">Ingredientes honestos, brasas encendidas y una mesa que invita a quedarse un poco más.</p><div class="hero-actions"><a class="button button-orange" href="#reserva">Quiero reservar <span>↗</span></a><a class="play-link" href="#historia"><i>▶</i> Conoce la experiencia</a></div></div>
+        <div class="hero-scroll"><span>Scroll para descubrir</span><i></i></div><div class="hero-stamp"><span>MF</span><small>Desde<br />2024</small></div>
+      </section>
+
+      <section class="intro-band"><div class="container intro-grid"><p class="intro-kicker">Una noche en Mesa Fuego</p><p class="intro-copy">Hay platos que alimentan.<br /><em>Y hay mesas que reúnen.</em></p><span class="intro-mark">✦</span></div></section>
+
+      <section class="section menu-section" id="carta"><div class="container"><div class="section-head"><div><p class="eyebrow eyebrow-dark"><span></span> La carta</p><h2>Platos con<br /><em>algo que decir.</em></h2></div><p class="section-note">Una carta breve, cambiante y pensada para compartir. Cada plato empieza con un ingrediente y termina en la memoria.</p></div><div class="menu-tabs" role="tablist" aria-label="Categorías del menú"><button class="active" type="button" data-filter="todos">Todo</button><button type="button" data-filter="para-comenzar">Para comenzar</button><button type="button" data-filter="fuego">Del fuego</button><button type="button" data-filter="dulce">Algo dulce</button></div><div class="dish-grid">
+          <article class="dish-card dish-large" data-category="fuego"><div class="dish-photo photo-steak"></div><div class="dish-copy"><span class="dish-type">Del fuego</span><h3>Entraña al rescoldo</h3><p>Chimichurri de hierbas, cebolla quemada y papas crujientes.</p><strong>$18.900</strong></div></article>
+          <article class="dish-card" data-category="para-comenzar"><div class="dish-photo photo-tomato"></div><div class="dish-copy"><span class="dish-type">Para comenzar</span><h3>Tomates de temporada</h3><p>Ricotta ahumada, aceite verde y pan de masa madre.</p><strong>$9.900</strong></div></article>
+          <article class="dish-card" data-category="dulce"><div class="dish-photo photo-dessert"></div><div class="dish-copy"><span class="dish-type">Algo dulce</span><h3>Chocolate & sal</h3><p>Ganache tibia, caramelo de miso y sal de mar.</p><strong>$7.500</strong></div></article>
+          <article class="dish-card dish-wide" data-category="fuego"><div class="dish-photo photo-fish"></div><div class="dish-copy"><span class="dish-type">Del fuego</span><h3>Pesca del día</h3><p>El mercado decide. Nosotros encendemos el fuego.</p><strong>Según mercado</strong></div></article>
+        </div><div class="menu-footer"><p>La carta puede cambiar según la temporada y la pesca del día.</p><a class="arrow-link" href="#reserva">Ven a probarla <span>↗</span></a></div></div></section>
+
+      <section class="story-section" id="historia"><div class="container story-grid"><div class="story-collage"><div class="collage-main"></div><div class="collage-small"></div><span class="collage-tag">Hecho lento.<br /><em>Servido vivo.</em></span></div><div class="story-copy"><p class="eyebrow"><span></span> La experiencia</p><h2>El fuego no es<br /><em>solo una técnica.</em></h2><p>Es el punto de encuentro. El sonido que abre la noche, el aroma que llega antes que el plato, la excusa perfecta para sentarse sin apuro.</p><p>En Mesa Fuego cocinamos con producto local, respeto por la temporada y la convicción de que comer bien siempre sabe mejor acompañado.</p><a class="arrow-link" href="#reserva">Ven a sentarte a la mesa <span>↗</span></a></div></div></section>
+
+      <section class="reserve-section" id="reserva"><div class="container reserve-grid"><div class="reserve-copy"><p class="eyebrow eyebrow-light"><span></span> Tu mesa te espera</p><h2>La mejor parte<br />es <em>quedarse.</em></h2><p>Reserva para una cena íntima, una celebración o simplemente porque hoy sí.</p><div class="details"><div><span>⌖</span><p>Av. Italia 1450<br />Ñuñoa, Santiago</p></div><div><span>◷</span><p>Mié–Sáb, 19:00–00:00<br />Cocina hasta las 22:45</p></div></div></div><form class="reserve-form" id="reserve-form"><div class="form-heading"><span>Reserva tu mesa</span><small>Respondemos por WhatsApp</small></div><label>Tu nombre<input type="text" name="name" placeholder="¿Cómo te llamas?" required /></label><div class="form-row"><label>Personas<select name="people" required><option value="" disabled selected>Elige</option><option>2 personas</option><option>3–4 personas</option><option>5–8 personas</option><option>Más de 8</option></select></label><label>Fecha<input type="date" name="date" required /></label></div><label>Nota para la reserva<input type="text" name="note" placeholder="¿Celebras algo? (opcional)" /></label><button class="button button-orange button-full" type="submit">Solicitar reserva <span>↗</span></button><p class="form-note">La reserva queda confirmada cuando nuestro equipo te responda.</p></form></div></section>
+
+      <section class="closing-section"><div class="container closing-content"><span class="closing-flame">✦</span><p>Comer es una forma<br /><em>de volver a casa.</em></p><a class="button button-light" href="#reserva">Haz una reserva <span>↗</span></a></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-top"><a class="brand" href="#inicio"><span class="brand-flame">✦</span><span>MESA <em>FUEGO</em></span></a><div class="footer-links"><a href="#carta">Carta</a><a href="#historia">Nosotros</a><a href="#reserva">Reservas</a><a href="#">Instagram</a></div></div><div class="container footer-bottom"><span>© 2026 Mesa Fuego</span><span>Una demo gastronómica para negocios que quieren verse inolvidables.</span><span class="demo-note">Demo comercial · No recibe reservas reales</span></div></footer>
+    <a class="whatsapp-float" href="#reserva" aria-label="Reservar por WhatsApp"><span>◔</span><strong>Reservar</strong></a>
+  </body>
+</html>
