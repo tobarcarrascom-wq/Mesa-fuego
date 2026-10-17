@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909"><link rel="stylesheet" href="/site.css">
+  <script src="/public.js" defer></script><title>Barbería</title>
+</head>
+<body class="barber-public">
+  <div class="topline">PÁGINA PERSONALIZADA · NEXORA BARBER</div>
+  <header class="header">
+    <a class="logo" href="#inicio"><b id="brand-mark">N</b><span id="brand">BARBERÍA<small>ESTILO PROPIO</small></span></a>
+    <nav><a href="#servicios">Servicios</a><a href="#galeria">Galería</a><a href="#reserva">Reservar</a></nav>
+    <a id="contact" class="seller" target="_blank" rel="noreferrer">WhatsApp ↗</a>
+  </header>
+  <main>
+    <section class="public-hero" id="inicio"><div class="public-photo"></div><div class="public-copy">
+      <p class="eyebrow">BARBERÍA · PÁGINA OFICIAL</p><h1>MÁS QUE UN CORTE,<br><em>ES TU ESTILO</em></h1>
+      <h2 id="name">Barbería</h2><p id="description"></p>
+      <a class="button gold public-hero-cta" href="#reserva">RESERVAR AHORA <span>↗</span></a>
+      <div class="hero-proof"><span>✦</span> Atención personalizada <i>·</i> Reserva en minutos</div>
+    </div></section>
+    <section class="section public-services" id="servicios"><p class="eyebrow">SERVICIOS Y PRECIOS</p><h2>Elige tu <em>servicio.</em></h2><div id="services" class="public-service-grid"></div></section>
+    <section class="section public-team" id="equipo"><p class="eyebrow">PROFESIONALES</p><h2>Manos expertas, <em>estilo propio.</em></h2><div id="team" class="public-team-grid"></div></section>
+    <section class="section gallery-public" id="galeria"><p class="eyebrow">TRABAJOS</p><h2>El oficio en <em>detalle.</em></h2><p class="gallery-note" id="gallery-note" hidden></p><div id="gallery" class="gallery-grid"></div></section>
+    <section class="section booking-public" id="reserva">
+      <div class="booking-heading"><div><p class="eyebrow">AGENDA</p><h2>Reserva tu próxima <em>visita.</em></h2><p>Elige profesional, servicio y horario. Tu solicitud queda pendiente hasta que el profesional la acepte.</p></div><span class="booking-mark">01 <i>/ RESERVA</i></span></div>
+      <div class="booking-layout">
+        <div class="booking-card"><form id="booking-form">
+          <div class="booking-step"><span>01</span><strong>TUS DATOS</strong></div>
+          <div class="fields"><label>Tu nombre<input id="customer" placeholder="Nombre y apellido" required maxlength="80" autocomplete="name"></label><label>WhatsApp o teléfono<input id="phone" type="tel" placeholder="+56 9 1234 5678" required maxlength="40" autocomplete="tel"></label></div>
+          <div class="booking-step"><span>02</span><strong>EL SERVICIO</strong></div>
+          <div class="fields"><label>Profesional<select id="professional" required></select></label><label>Servicio<select id="service" required></select></label></div>
+          <div class="booking-step"><span>03</span><strong>FECHA Y HORA</strong></div>
+          <div class="fields"><label>Fecha preferida<input id="date" type="date" required></label><label>Hora disponible<select id="time" required></select></label></div>
+          <div class="slot-legend"><span><i class="slot-dot free"></i>Libre</span><span><i class="slot-dot waiting"></i>Pendiente</span><span><i class="slot-dot busy"></i>Ocupado</span></div>
+          <button class="button gold booking-submit">ENVIAR SOLICITUD <span>↗</span></button><p id="booking-status" class="status" role="status"></p></form>
+          <details class="status-lookup"><summary>Consultar o cancelar una solicitud</summary><form id="lookup-form" class="fields"><label>Identificador de la solicitud<input id="lookup-id" required></label><label>WhatsApp o teléfono usado<input id="lookup-phone" type="tel" required></label><button class="button outline">Consultar estado</button><p id="lookup-result" class="status"></p></form></details>
+        </div>
+        <aside class="booking-aside"><article class="booking-info-card"><p class="eyebrow">TU RESERVA, PASO A PASO</p><h3>Así de fácil.</h3><ol><li><b>1</b><span><strong>Elige tu servicio</strong><small>Selecciona el corte y profesional.</small></span></li><li><b>2</b><span><strong>Envía tu solicitud</strong><small>Escoge fecha y hora disponible.</small></span></li><li><b>3</b><span><strong>Recibe confirmación</strong><small>El profesional confirma tu horario.</small></span></li></ol></article><article class="booking-promo"><span class="promo-icon">✂</span><p class="eyebrow">BUEN ESTILO, SIN ESPERAS</p><h3>Tu próximo corte<br>empieza aquí.</h3><a href="#servicios">VER SERVICIOS ↗</a></article></aside>
+      </div>
+    </section>
+    <section id="ubicacion" class="contact-strip"><div><p class="eyebrow">VISÍTANOS</p><h2 id="address">Dirección</h2><p id="hours"></p><a id="maps" class="social-link" target="_blank" rel="noreferrer">Ver ubicación en el mapa ↗</a><a id="instagram" class="social-link" target="_blank" rel="noreferrer" hidden>Instagram ↗</a></div><a class="button gold" id="contact-bottom" target="_blank" rel="noreferrer">ESCRÍBENOS POR WHATSAPP ↗</a></section>
+  </main>
+  <footer><span>Página personalizada · NEXORA BARBER</span><a href="/barbero">Panel del barbero ↗</a></footer>
+</body>
+</html>
+
